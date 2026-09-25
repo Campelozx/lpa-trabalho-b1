@@ -54,5 +54,12 @@ void exibir_resumo(int entregas, float soma, int qtd_eco, int qtd_exp, int qtd_p
 }
 
 int main() {
+    int continuar = 1;
+
+    int total_entregas = 0;
+    float soma = 0.0;
+    int qtd_eco = 0, qtd_exp = 0, qtd_prio = 0;
+    float maior = 0.0, menor = 0.0;
+    
     return 0;
 }

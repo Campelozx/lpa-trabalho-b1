@@ -39,6 +39,20 @@ float obter_percentual_modalidade(int modalidade) {
     return 0.0; 
 }
 
+void exibir_resumo(int entregas, float soma, int qtd_eco, int qtd_exp, int qtd_prio, float maior, float menor) {
+    printf("RESUMO DA SESSAO\n");
+    printf("Total entregas: %d\n", entregas);
+    if (entregas > 0) {
+        printf("Valor total: R$ %.2f\n", soma);
+        printf("Valor medio: R$ %.2f\n", soma / entregas);
+        printf("Entregas economicas: %d\n", qtd_eco);
+        printf("Entregas expressas: %d\n", qtd_exp);
+        printf("Entregas prioritarias: %d\n", qtd_prio);
+        printf("Maior valor: %.2f\n", maior);
+        printf("Menor valor: %.2f\n", menor);
+    }
+}
+
 int main() {
     return 0;
 }

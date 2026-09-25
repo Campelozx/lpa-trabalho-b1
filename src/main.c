@@ -13,6 +13,19 @@ float calcular_valor_base(float distancia) {
     return 0.25;
 }
 
+float obter_percentual_peso(float peso) {
+    if (peso <= 2.0) {
+        return 0.0;
+    }
+    if (peso <= 5.0) {
+        return 0.05;
+    }
+    if (peso <= 10.0) {
+        return 0.10;
+    }
+    return 0.20;
+}
+
 int main() {
     return 0;
 }

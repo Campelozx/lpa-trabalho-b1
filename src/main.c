@@ -26,6 +26,19 @@ float obter_percentual_peso(float peso) {
     return 0.20;
 }
 
+float obter_percentual_modalidade(int modalidade) {
+    if (modalidade == 1) {
+        return 0.0;
+    }
+    if (modalidade == 2) {
+        return 0.15;
+    }
+    if (modalidade == 3) {
+        return 0.30;
+    }
+    return 0.0; 
+}
+
 int main() {
     return 0;
 }

@@ -152,6 +152,8 @@ int main() {
         } while (continuar != 0 && continuar != 1);
         printf("\n");
     }
+
+    exibir_resumo(total_entregas, soma, qtd_eco, qtd_exp, qtd_prio, maior, menor);
     
     return 0;
 }
